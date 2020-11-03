@@ -1,8 +1,8 @@
 name: RUN puppeteer
 
 on:
-  #schedule:
-    #- cron:  '*/10 * * * *'
+  schedule:
+    - cron:  '*/10 * * * *'
 
 jobs:
   build:
@@ -16,4 +16,4 @@ jobs:
         uses: "imbhargav5/puppeteer-pdf-action@master"
         with:
           url: https://github.com
-          output-file-path: github.pdf
+          output-file-path: ./github.pdf
