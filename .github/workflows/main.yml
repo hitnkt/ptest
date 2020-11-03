@@ -1,8 +1,8 @@
 name: RUN puppeteer
 
 on:
-  push:
-    branches: [ master ]
+  schedule:
+    - cron:  '*/10 * * * *'
 
 jobs:
   build:
